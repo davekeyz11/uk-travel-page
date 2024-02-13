@@ -1,0 +1,82 @@
+body {
+    line-height: 1;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    background: url('IMGS/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+ul.topnav li{
+    float: left;
+    list-style: none;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+    list-style: none;
+}
+
+ul.topnav li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    min-height: 16px;
+    display: block;
+}
+
+ul.topnav li a:hover {
+    color: #00abf0;
+    transition-duration: 3s;
+}
+
+div.content {
+    background: transparent;
+    color: #ededed;
+}
+
+div.content h1.h1-first {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+span.uk {
+    padding-left: 100px;
+}
+
+div.description {
+    line-height: 1.5;
+}
+
+button.btn {
+    width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button.btn:hover {
+    background-color: #00abf0;
+    transition-duration: 3s;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
