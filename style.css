@@ -45,6 +45,10 @@ ul.topnav li a:hover {
     transition-duration: 3s;
 }
 
+@media screen and (max-width: 680px) {
+    ul.topnav li {display: none;}
+}
+
 div.content {
     background: transparent;
     color: #ededed;
