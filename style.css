@@ -1,11 +1,8 @@
 body {
-    line-height: 1;
-    margin: 0;
+    background-color: #414446;
     font-family: sans-serif;
-    font-size: 18px;
-    background: url('IMGS/img1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: #ededed;
+    margin: 0;
 }
 
 nav {
@@ -15,72 +12,102 @@ nav {
 
 nav ul {
     overflow: hidden;
-    color: black;
+    background: transparent;
     margin: 0;
     padding: 0;
-    background: transparent;
 }
 
-ul.topnav li{
+ul.topnav li.first-header {
+    color: #ededed;
+    font-family: sans-serif;
+    font-size: 52px;
     float: left;
-    list-style: none;
 }
 
-ul.topnav li.topnav-right {
+ul.topnav li.different {
     float: right;
     list-style: none;
 }
 
-ul.topnav li a{
-    color: black;
-    text-align: center;
+ul.topnav li.first-header a {
     text-decoration: none;
+    color: #ededed;
     padding: 14px;
     min-height: 16px;
-    display: block;
 }
 
-ul.topnav li a:hover {
-    color: #00abf0;
-    transition-duration: 3s;
+ul.topnav li.different a {
+    text-decoration: none;
+    padding: 14px;
+    color: #ededed;
+    min-height: 1;
 }
+
+ul.topnav li.different a:hover {
+    color: #00abf0;
+}
+
+ul.topnav li.dropdownIcon {
+    float: right;
+    list-style: none;
+    display: none
+}
+
+ul.topnav li.dropdownIcon a {
+    color: #ededed;
+    min-height: 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul.topanv li.dropdownIcon a:hover {
+    background-color: #00abf0;
+}
+
+/* Mobile Style Properties */
 
 @media screen and (max-width: 680px) {
-    ul.topnav li {display: none;}
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon {
+        display: block;
+    }
 }
+
+/* Content Styling */
 
 div.content {
-    background: transparent;
-    color: #ededed;
+    padding-top: 100px;
+    line-height: 1.5;
 }
 
-div.content h1.h1-first {
+div.content h1.content-header1 {
     font-size: 52px;
     font-weight: bold;
 }
 
-span.uk {
-    padding-left: 100px;
+/* Style properties and values for the button */
+
+div.btn {
+    background: transparent;
+    padding-top: 32px;
 }
 
-div.description {
-    line-height: 1.5;
-}
-
-button.btn {
-    width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  background: transparent;
-  font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-button.btn:hover {
-    background-color: #00abf0;
-    transition-duration: 3s;
+div.btn button.btn1 {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px;
     font-family: sans-serif;
     font-size: 18px;
-    font-weight: bold;
+}
+
+div.btn button.btn1 a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+div.btn button.btn1:hover {
+    background-color: #00abf0;
 }
